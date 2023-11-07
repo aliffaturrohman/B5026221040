@@ -1,0 +1,223 @@
+body{
+    background: rgb(221,236,239) no-repeat fixed;
+    background: -moz-linear-gradient(0deg, rgba(221,236,239,1) 0%, rgba(255,255,255,1) 100%) no-repeat fixed;
+    background: -webkit-linear-gradient(0deg, rgba(221,236,239,1) 0%, rgba(255,255,255,1) 100%) no-repeat fixed;
+    background: linear-gradient(0deg, rgba(221,236,239,1) 0%, rgba(255,255,255,1) 100%) no-repeat fixed;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ddecef",endColorstr="#ffffff",GradientType=1);
+    font-family: 'Open Sans', sans-serif;
+}
+#alif-headerTitle{
+    position: sticky;
+    top: 15px;
+    margin: auto;
+    width: 788px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.alif-3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 1;
+}
+
+.alif-miniImage{
+    position: absolute;
+    border-radius: 50px;
+    left: 13px;
+    top: 8px;
+    right: 731px;
+    bottom: 8px;
+
+}
+.alif-textTitle{
+    position: absolute;
+    text-align: center;
+    left: 236px;
+    right: 236px;
+    top: 18px;
+    bottom: 18px;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.alif-menuBoxHeader{
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+    left: 735px;
+    top: 10px;
+    right: 13px;
+    bottom: 10px;
+    border: 1px solid #E2E2E2;
+    border-radius: 38px;
+    background: #F0F0F0;
+    transition: all 0.25s linear;
+}
+
+.alif-menuBoxHeader:hover{
+    background: #dadada;
+
+}
+
+#alif-content{
+    width: 906px;
+    height: 883px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.alif-centerImage{
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 28px;
+}
+
+#alif-identity{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.alif-username{
+    color: #292828;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+}
+.alif-description{
+    margin-top: 5px;
+    color: #292828;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+
+.alif-subTitle{
+    color: #292828;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-top: 32px;
+}
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.alif-barButton {
+    text-align: center;
+    position: relative;
+    width: 680px;
+    height: 18px;
+    color: #888;
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.24);
+    transition: all 0.1s linear;
+    overflow: visible;
+    z-index: 1;
+}
+
+.alif-barButton:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.11);
+
+}
+
+.alif-menuBoxContent {
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+    right: 6px;
+    bottom: 4px;
+    border: 1px solid #FFF;
+    border-radius: 38px;
+    background: #FFF;
+    transition: all 0.25s linear;
+
+}
+
+.alif-barButton:hover .alif-menuBoxContent{
+    display: block;
+}
+
+.alif-menuBoxContent:hover {
+    background: #F0F0F0;
+    border: 1px solid #E2E2E2;
+
+}
+
+.alif-container {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.alif-socialMedia ul {
+    list-style: none;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.alif-socialMedia ul li {
+    margin: 0 8px;
+    transition: transform 0.05s ease-in-out;
+}
+
+.alif-socialMedia ul li:hover {
+    transform: scale(1.1);
+}
+
+.alif-logoLinktree {
+    margin-top: 32px;
+}
+
+
+.alif-imgOnBar{
+    position: absolute;
+    bottom: 3px;
+    left: 4px;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 37px;
+    border: 1px solid #E2E2E2;
+    object-fit: cover;
+    object-position: 65% 25%;
+}

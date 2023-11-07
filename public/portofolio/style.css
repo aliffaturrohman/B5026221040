@@ -1,0 +1,160 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.5s;
+    color: rgba(0, 0, 0, 0.375) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+.navbar-nav .nav-item {
+    transition: background-color 0.5s, color 0.5s, border-radius 0.5s, border 0.5s;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #007BFF;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+.navbar-nav .active {
+    background-color: #007BFF;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.img {
+    width: 500px;
+    float: right;
+    filter: drop-shadow(8px 11px 36px #66666669);
+    -webkit-filter: drop-shadow(8px 11px 36px #66666669);
+    filter: brightness(120%);
+}
+
+.img2 {
+    width: 448px;
+    float: right;
+    filter: drop-shadow(8px 11px 36px #66666669);
+    -webkit-filter: drop-shadow(8px 11px 36px #66666669);
+    filter: brightness(125%);
+}
+
+.img-icon {
+    position: absolute;
+
+}
+
+.icon-1 {
+    width: 135px;
+    bottom: 120px;
+    left: 20px;
+    filter: drop-shadow(-7.5px 10px 30px #0d6efdc1) brightness(150%);
+}
+
+
+.icon-2 {
+    width: 150px;
+    animation-delay: 1s;
+    bottom: 0px;
+    right: 10px;
+    filter: drop-shadow(-7.5px 10px 30px #ffc107c1) brightness(150%);
+}
+
+.icon-3 {
+    width: 150px;
+    animation-delay: 2s;
+    top: 100px;
+    right: 20px;
+    filter: drop-shadow(-7.5px 10px 30px #fd7d14c1) brightness(150%);
+}
+
+.animate__shakeY {
+    animation-duration: 30s;
+    transform-origin: center;
+}
+
+.text-greeting {
+    font-size: 42px;
+    margin-top: 50px;
+}
+
+.text-describe {
+    font-size: 60px;
+}
+
+.intro-page {
+    margin-top: 60px;
+}
+
+.homePage {
+    background: white;
+}
+
+.card{
+    border-radius: 30px;
+    height: 250px;
+    backdrop-filter: blur(19px) saturate(200%);
+    -webkit-backdrop-filter: blur(19px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 3px solid rgba(209, 213, 219, 0.3);
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carouselColumn{
+    height: 600px !important;
+    margin-bottom: 50px;
+}
+
+.aboutMe{
+    backdrop-filter: blur(19px) saturate(200%);
+    -webkit-backdrop-filter: blur(19px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    
+}
+
+.form-control::placeholder {
+    font-size: 14px;
+    color: gray;
+}
+
+.form-control{
+    font-size: 14px;
+}
+
+.cardPage{
+    height: 600px !important;
+}
