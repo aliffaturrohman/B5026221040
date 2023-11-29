@@ -11,6 +11,7 @@
         <li>Nama : {{$nama}} </li>
         <li>Alamat : {{$alamat}} </li>
         <li>Umur : {{$umur}} </li>
+        <a href="showjam/{{date('G:i:s')}}">Klik disini</a>
     </Ul>
 
 </body>
