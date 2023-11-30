@@ -4,7 +4,6 @@
 
 
 @section('konten')
-
     <h3>Data Pegawai</h3>
 
 
@@ -42,5 +41,4 @@
         @endforeach
     </table>
     {{$pegawai->links()}}
-    
 @endsection
