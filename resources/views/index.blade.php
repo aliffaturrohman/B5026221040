@@ -17,8 +17,8 @@
 	</form>
     <br/>
 
-    <table class="table table-striped table-hover">
-        <tr class="row">
+    <table class="table table-striped table-hover rounded">
+        <tr class="bg-primary text-white row">
             <th class="col-2">Nama</th>
             <th class="col-2">Jabatan</th>
             <th class="col-1">Umur</th>

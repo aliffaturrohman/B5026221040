@@ -87,7 +87,8 @@ class PegawaiController extends Controller
     		// mengambil data dari table pegawai sesuai pencarian data
 		$pegawai = DB::table('pegawai')
 		            ->where('pegawai_nama','like',"%".$cari."%")
-		            ->paginate();
+                    ->orderBy('pegawai_nama', 'asc')
+                    ->paginate(10);
 
     		// mengirim data pegawai ke view index
 		return view('index',['pegawai' => $pegawai, 'cari' => $cari]);
@@ -97,7 +98,7 @@ class PegawaiController extends Controller
 	public function view($id)
 	{
 		// mengambil data pegawai berdasarkan id yang dipilih
-		$pegawai = DB::table('pegawai')->where('pegawai_id',$id)->get();
+		$pegawai = DB::table('pegawai')->where('pegawai_id',$id)->first();
 		// passing data pegawai yang didapat ke view view.blade.php
 		return view('view',['pegawai' => $pegawai]);
 
