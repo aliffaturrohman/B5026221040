@@ -24,7 +24,7 @@
             </div>
 
         </div>
-        <div class="col p-5 text-light form-horizontal">
+        <div class="col p-5 text-white form-horizontal">
             <div class="row">
                 <h1>Data Pegawai</h1>
             </div>
@@ -48,6 +48,12 @@
                 <div class="col-3 font-weight-bold">Alamat</div>
                 <textarea class="col-7 form-control bg-white text-dark" rows="3" disabled style="resize: none;">{{ $pegawai->pegawai_alamat }}</textarea>
                 {{-- <div class="col">{{ $pegawai->pegawai_alamat }}</div> --}}
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-7 text-right">
+                    <a href="/pegawai" class=" mt-5 btn btn-warning">Oke</a>
+                </div>
             </div>
 
         </div>
