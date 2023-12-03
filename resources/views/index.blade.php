@@ -18,7 +18,7 @@
     <br/>
 
     <table class="table table-striped table-hover rounded">
-        <tr class="bg-primary text-white row">
+        <tr class="bg-primary text-white text-center row">
             <th class="col-2">Nama</th>
             <th class="col-2">Jabatan</th>
             <th class="col-1">Umur</th>
@@ -28,8 +28,8 @@
         @foreach ($pegawai as $p)
             <tr class="row">
                 <td class="col-2">{{ $p->pegawai_nama }}</td>
-                <td class="col-2">{{ $p->pegawai_jabatan }}</td>
-                <td class="col-1">{{ $p->pegawai_umur }}</td>
+                <td class="col-2 text-center">{{ $p->pegawai_jabatan }}</td>
+                <td class="col-1 text-center">{{ $p->pegawai_umur }}</td>
                 <td class="col-4">{{ $p->pegawai_alamat }}</td>
                 <td class="col-3">
                     <a href="/pegawai/view/{{ $p->pegawai_id }}" class="btn btn-success">View</a>
