@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">Alif Faturrohman - 5026221040</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
