@@ -31,22 +31,22 @@
             <br>
             <div class="row mb-3">
                 <div class="col-3 font-weight-bold">Nama</div>
-                <input class="col-7 form-control bg-white text-dark" type="text" value="{{ $pegawai->pegawai_nama }}" disabled>
+                <div class="col-7 form-label border rounded bg-white text-dark" type="text">{{ $pegawai->pegawai_nama }}</div>
                 {{-- <div class="col">{{ $pegawai->pegawai_nama }}</div> --}}
             </div>
             <div class="row mb-3">
                 <div class="col-3 font-weight-bold">Jabatan</div>
-                <input class="col-7 form-control bg-white text-dark" type="text" value="{{ $pegawai->pegawai_jabatan }}" disabled>
+                <div class="col-7 form-label border rounded bg-white text-dark" type="text">{{ $pegawai->pegawai_jabatan }}</div>
                 {{-- <div class="col">{{ $pegawai->pegawai_jabatan }}</div> --}}
             </div>
             <div class="row mb-3">
                 <div class="col-3 font-weight-bold">Umur</div>
-                <input class="col-7 form-control bg-white text-dark" type="text" value="{{ $pegawai->pegawai_umur }}" disabled>
+                <div class="col-7 form-label border rounded bg-white text-dark" type="text">{{ $pegawai->pegawai_umur }}</div>
                 {{-- <div class="col">{{ $pegawai->pegawai_umur }}</div> --}}
             </div>
             <div class="row">
                 <div class="col-3 font-weight-bold">Alamat</div>
-                <textarea class="col-7 form-control bg-white text-dark" rows="3" disabled style="resize: none;">{{ $pegawai->pegawai_alamat }}</textarea>
+                <textarea class="col-7 form-label border rounded bg-white text-dark" rows="3" style="resize: none;">{{ $pegawai->pegawai_alamat }}</textarea>
                 {{-- <div class="col">{{ $pegawai->pegawai_alamat }}</div> --}}
             </div>
             <div class="row">

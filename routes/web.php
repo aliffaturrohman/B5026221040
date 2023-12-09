@@ -52,3 +52,16 @@ Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+Route::get('/nilaikuliah', 'App\Http\Controllers\NilaiKuliahController@nilaikuliah');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambahdata');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+Route::get('/baju','App\Http\Controllers\BajuController@indexbaju');
+Route::get('/baju/tambah','App\Http\Controllers\BajuController@tambahbaju');
+Route::post('/baju/store','App\Http\Controllers\BajuController@storebaju');
+Route::get('/baju/edit/{id}','App\Http\Controllers\BajuController@editbaju');
+Route::post('/baju/update','App\Http\Controllers\BajuController@updatebaju');
+Route::get('/baju/hapus/{id}','App\Http\Controllers\BajuController@hapusbaju');
+Route::get('/baju/cari','App\Http\Controllers\BajuController@caribaju');
+Route::get('/baju/view/{id}','App\Http\Controllers\BajuController@viewbaju');
