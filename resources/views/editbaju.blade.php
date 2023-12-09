@@ -12,30 +12,22 @@
     <br />
     <br />
     <div>
-        @foreach ($pegawai as $p)
-            <form action="/pegawai/update" method="post" class="form-horizontal col-5">
-                {{ csrf_field() }}
-                <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br />
-                <div class="form-group row">
-                    <label class="col">Nama</label>
-                    <input type="text" class="col form-control" required="required" name="nama" value="{{ $p->pegawai_nama }}">
-                </div>
-                <div class="form-group row">
-                    <label class="col">Jabatan</label>
-                    <input type="text" class="col form-control" required="required" name="jabatan" value="{{ $p->pegawai_jabatan }}"> <br />
-                </div>
-                <div class="form-group row">
-                    <label class="col">Umur</label>
-                    <input type="number" class="col form-control" required="required" name="umur" value="{{ $p->pegawai_umur }}"> <br />
+        @foreach ($baju as $b)
+        <form action="/baju/update" method="post" class="form-horizontal col-5">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value="{{$b -> kodebaju}}">
+            <div class="form-group row">
+                <label for="merkbaju" class="col">merk baju</label>
+                <input type="text" class="form-control col" placeholder="Masukkan merk baju" name="merkbaju" value="{{$b -> merkbaju}}">
+            </div>
+            <div class="form-group row">
+                <label for="stockbaju" class="col">stock baju</label>
+                <input type="number" class="form-control col" placeholder="Masukkan stock" name="stockbaju" value="{{$b -> stockbaju}}">
+            </div>
 
-                </div>
-                <div class="form-group row">
-                    <label class="col">Alamat</label>
-                    <textarea class="col form-control" required="required" rows="3" name="alamat">{{ $p->pegawai_alamat }}</textarea>
-                </div>
-                <input type="submit" class="btn btn-primary" value="Simpan Data">
+            <input type="submit" class="btn btn-primary" value="Simpan Data">
 
-            </form>
+        </form>
         @endforeach
     </div>
 @endsection

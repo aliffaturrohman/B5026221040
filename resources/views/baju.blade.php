@@ -19,19 +19,25 @@
 
     <table class="table table-striped table-hover rounded">
         <tr class="bg-primary text-white text-center row">
+            <th class="col-2">Kode Baju</th>
             <th class="col-2">Merk Baju</th>
             <th class="col-2">Stock Baju</th>
-            <th class="col-1">Tersedia</th>
+            <th class="col-3">Ketersediaan</th>
+            <th class="col-3">Opsi</th>
         </tr>
         @foreach ($baju as $b)
             <tr class="row">
-                <td class="col-2">{{ $b->merkbaju }}</td>
+                <td class="col-2 text-center">{{ $b->kodebaju }}</td>
+                <td class="col-2 text-center">{{ $b->merkbaju }}</td>
                 <td class="col-2 text-center">{{ $b->stockbaju }}</td>
-                <td class="col-1 text-center">{{ $b->tersedia }}</td>
-                <td class="col-3">
+                <td class="col-3 text-center">
+                     @if ($b->tersedia == 'Y') Tersedia
+                     @else Tidak Tersedia
+                     @endif
+                </td>
+                <td class="col-3 text-center">
                     <a href="/baju/view/{{ $b->kodebaju }}" class="btn btn-success">View</a>
                     <a href="/baju/edit/{{ $b->kodebaju }}" class="btn btn-warning">Edit</a>
-                    |
                     <a href="/baju/hapus/{{ $b->kodebaju }} " class="btn btn-danger">Hapus</a>
                 </td>
             </tr>
