@@ -4,6 +4,9 @@
 
 @section('konten')
 
+<h3>Tambah Data Nilai Kuliah</h3>
+<br>
+<br>
 <form action="/nilaikuliah/store" method="post" class="form-horizontal col-5">
     {{ csrf_field() }}
     <div class="form-group row">

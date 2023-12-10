@@ -19,7 +19,7 @@
             <th class="col">Bobot</th>
         </tr>
         @foreach ($nilaikuliah as $nilai)
-            <tr class="row">
+            <tr class="row text-center">
                 <td class="col">{{ $nilai->ID }}</td>
                 <td class="col">{{ $nilai->NRP }}</td>
                 <td class="col">{{ $nilai->NilaiAngka }}</td>

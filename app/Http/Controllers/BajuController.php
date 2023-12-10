@@ -93,7 +93,7 @@ class BajuController extends Controller
 	}
 
     // method untuk menampilkan view form tambah baju
-	public function view($kodebaju)
+	public function viewbaju($kodebaju)
 	{
 		// mengambil data baju berdasarkan id yang dipilih
 		$baju = DB::table('baju')->where('kodebaju',$kodebaju)->first();

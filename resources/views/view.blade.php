@@ -46,7 +46,7 @@
             </div>
             <div class="row">
                 <div class="col-3 font-weight-bold">Alamat</div>
-                <textarea class="col-7 form-label border rounded bg-white text-dark" rows="3" style="resize: none;">{{ $pegawai->pegawai_alamat }}</textarea>
+                <div class="col-7 form-label border rounded bg-white text-dark" rows="3" style="resize: none;">{{ $pegawai->pegawai_alamat }}</div>
                 {{-- <div class="col">{{ $pegawai->pegawai_alamat }}</div> --}}
             </div>
             <div class="row">
