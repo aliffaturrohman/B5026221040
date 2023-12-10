@@ -77,7 +77,7 @@ class BajuController extends Controller
 		return redirect('/baju');
 	}
 
-    public function cari(Request $request)
+    public function caribaju(Request $request)
 	{
 		// menangkap data pencarian
 		$cari = $request->cari;
