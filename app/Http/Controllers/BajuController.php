@@ -13,8 +13,7 @@ class BajuController extends Controller
     	// mengambil data dari table baju
 		// $baju = DB::table('baju')->get();
         $baju = DB::table('baju')
-                    ->orderBy('merkbaju', 'asc')
-                    ->paginate(10);
+                    ->orderBy('merkbaju', 'asc');
 
     	// mengirim data baju ke view index
 		return view('baju',['baju' => $baju]);

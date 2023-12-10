@@ -4,7 +4,7 @@
 
 
 @section('konten')
-    <h3>Data Pegawai</h3>
+    <h3>Data Baju</h3>
 
 
     <a href="/baju/tambah" class="btn btn-primary"> + Tambah Data Baju</a>
@@ -43,5 +43,4 @@
             </tr>
         @endforeach
     </table>
-    {{$baju->links()}}
 @endsection

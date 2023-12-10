@@ -5,7 +5,7 @@
 
 @section('konten')
 
-    <h3>Data Pegawai</h3>
+    <h3>TambahData Baju</h3>
 
     <a href="/pegawai"> Kembali</a>
 
