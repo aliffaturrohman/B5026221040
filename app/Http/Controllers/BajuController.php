@@ -13,7 +13,8 @@ class BajuController extends Controller
     	// mengambil data dari table baju
 		// $baju = DB::table('baju')->get();
         $baju = DB::table('baju')
-                    ->orderBy('merkbaju', 'asc');
+                    ->orderBy('merkbaju', 'asc')
+                    ->get();
 
     	// mengirim data baju ke view index
 		return view('baju',['baju' => $baju]);
@@ -85,7 +86,7 @@ class BajuController extends Controller
 		$baju = DB::table('baju')
 		            ->where('merkbaju','like',"%".$cari."%")
                     ->orderBy('merkbaju', 'asc')
-                    ->paginate(10);
+                    ->get();
 
     		// mengirim data baju ke view index
 		return view('baju',['baju' => $baju, 'cari' => $cari]);
