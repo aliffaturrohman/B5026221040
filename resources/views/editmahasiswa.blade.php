@@ -15,13 +15,10 @@
         @foreach ($mahasiswa as $m)
             <form action="/mahasiswa/update" method="post" class="form-horizontal col-5">
                 {{ csrf_field() }}
+                    <input type="text" hidden class="col form-control" required="required" name="NRP" value="{{ $m->NRP}}"> <br />
                 <div class="form-group row">
                     <label class="col">Nama</label>
                     <input type="text" class="col form-control" required="required" name="Nama" value="{{ $m->Nama }}">
-                </div>
-                <div class="form-group row">
-                    <label class="col">NRP</label>
-                    <input type="text" class="col form-control" required="required" name="NRP" value="{{ $m->NRP}}"> <br />
                 </div>
                 <div class="form-group row">
                     <label class="col">Jurusan</label>
