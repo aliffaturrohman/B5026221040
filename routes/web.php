@@ -65,3 +65,8 @@ Route::post('/baju/update','App\Http\Controllers\BajuController@updatebaju');
 Route::get('/baju/hapus/{id}','App\Http\Controllers\BajuController@hapusbaju');
 Route::get('/baju/cari','App\Http\Controllers\BajuController@caribaju');
 Route::get('/baju/view/{id}','App\Http\Controllers\BajuController@viewbaju');
+
+Route::get('/mahasiswa','App\Http\Controllers\MahasiswaController@mahasiswa');
+Route::get('/mahasiswa/edit/{id}','App\Http\Controllers\MahasiswaController@editmahasiswa');
+Route::post('/mahasiswa/update','App\Http\Controllers\MahasiswaController@updatemahasiswa');
+Route::get('/mahasiswa/view/{id}','App\Http\Controllers\MahasiswaController@viewmahasiswa');

@@ -18,15 +18,21 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Alif Faturrohman - 5026221040</a>
+        <a class="navbar-brand" href="/">Alif Faturrohman - 5026221040</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 1</a>
+                <a class="nav-link" href="/mahasiswa">Mahasiswa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link" href="/baju">Baju</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/nilaikuliah">Nilai Kuliah</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pegawai">Pegawai</a>
             </li>
 
             <!-- Dropdown -->

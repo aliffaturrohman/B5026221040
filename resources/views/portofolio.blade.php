@@ -141,7 +141,7 @@
                         <a class="nav-link px-4" href="#blogPage">Blog</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link px-4" href="#">Contact</a>
+                        <a class="nav-link px-4" href="#EAS">Evaluasi Akhir Semester</a>
                     </li>
                 </ul>
             </div>
@@ -513,19 +513,29 @@
     <section>
         <center>
             <div class="container">
-                <ul class="list-unstyled">
-                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{route('file1')}}"
+                <ul id="EAS" class="list-unstyled">
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{ route('file1') }}"
                             role="button">Item 1</a></li>
-                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{route('file2')}}"
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{ route('file2') }}"
                             role="button">Item 2</a></li>
-                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{route('file3')}}"
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{ route('file3') }}"
                             role="button">Item 3</a></li>
-                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{route('file4')}}"
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{ route('file4') }}"
                             role="button">Item 4</a></li>
-                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{route('file5')}}"
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{ route('file5') }}"
                             role="button">Item 5</a></li>
-                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{route('file6')}}"
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-danger" href="{{ route('file6') }}"
                             role="button">Item 6</a></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-warning" href="/mahasiswa"
+                            role="button">Mahasiswa</a></li>
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-warning" href="/baju"
+                            role="button">Baju</a></li>
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-warning" href="/nilaikuliah"
+                            role="button">Nilai Kuliah</a></li>
+                    <li class="d-md-inline d-block p-3"><a class="btn btn-warning" href="/pegawai"
+                            role="button">Pegawai</a></li>
                 </ul>
             </div>
         </center>
