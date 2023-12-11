@@ -22,7 +22,7 @@
                 <td class="col-2 text-center">{{ $m->NRP }}</td>
                 <td class="col-2 text-center">{{ $m->Nama }}</td>
                 <td class="col-2 text-center">{{ $m->Jurusan }}</td>
-                <td class="col-2 text-center">{{ $m->IPK }}</td>
+                <td class="col-3 text-center">{{ $m->IPK }}</td>
                 <td class="col-3 text-center">
                     <a href="/mahasiswa/view/{{ $m->NRP }}" class="btn btn-success">View</a>
                     <a href="/mahasiswa/edit/{{ $m->NRP }}" class="btn btn-warning">Edit</a>
